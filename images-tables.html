@@ -11,27 +11,318 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/override-style.css">
+    
+    <link rel="stylesheet" href="css/override-style.css" />
   </head>
   <body>
-    <!-- Page wrpper -->
+    <!-- Page wrapper -->
     <div class="container-fluid">
-    
-       <!-- Responsive image -->
-       <h4 class="text-center display-4">Responsive image</h4>
-       <h4 class="text-center display-4">Image classes</h4>
-       <h4 class="text-center display-4">Align images</h4>
-       <h4 class="text-center display-4">Table element</h4>
-       <h4 class="text-center display-4">Thead </h4>
-       <h4 class="text-center display-4">Table styles</h4>
-       <h4 class="text-center display-4">Responsive tables</h4>
+      <h6><a href="/index.html" class="text-info">Back to  Home</a> </h6>
+      <!-- Responsive image -->
+      <h4 class="text-center display-4">Responsive image</h4>
 
-      
+      <div class="container" style="width: 500px;">
+        <img src="https://source.unsplash.com/random/" class="img-fluid" alt="at">
+      </div>
 
+      <!-- Image classes -->
+      <h4 class="text-center display-4">Image classes</h4>
+      <div class="container" style="width: 700px;">
+        <img src="https://source.unsplash.com/random/" class="img-fluid img-thumbnail" alt="at">
+        <img src="https://source.unsplash.com/random/500x500" class=" img-fluid rounded-circle" alt="at">
+      </div>
+
+      <!-- Alignment -->
+      <h4 class="text-center display-4">Align images</h4>
+      <div class="container-fluid border border-danger">
+
+        <img src="https://source.unsplash.com/random/200x200" class="img-fluid img-thumbnail d-block mr-5" alt="at">
+        <img src="https://source.unsplash.com/random/200x200" class="img-fluid img-thumbnail " alt="at">
+
+      </div>
+
+      <!-- Table -->
+      <h4 class="text-center display-4">Table element</h4>
+      <div class="container">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!-- Thead -->
+      <h4 class="text-center display-4">Thead</h4>
+      <div class="container">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Table styles -->
+      <h4 class="text-center display-4">Table styles</h4>
+
+      <div class="container">
+        <table class="table table-striped">
+          <caption>Striped</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container">
+        <table class="table table-dark">
+          <caption>Dark</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-primary">
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container">
+        <table class="table table-bordered">
+          <caption>Border</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container">
+        <table class="table table-borderless">
+          <caption>Borderless</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container">
+        <table class="table table-hover">
+          <caption>Hover</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container">
+        <table class="table table-sm">
+          <caption>Small</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Responsive tables -->
+      <h4 class="text-center display-4">Responsive tables</h4>
+
+      <div class="container mb-5">
+        <table class="table table-responsive">
+          <caption>Responsive</caption>
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Kolona 1</th>
+              <th scope="col">Kolona 2</th>
+              <th scope="col">Kolona 3</th>
+              <th scope="col">Kolona 4</th>
+              <th scope="col">Kolona 5</th>
+              <th scope="col">Kolona 6</th>
+              <th scope="col">Kolona 6</th>
+              <th scope="col">Kolona 6</th>
+              <th scope="col">Kolona 6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary">
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr class="table-danger">
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+              <th>Stavka 1</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

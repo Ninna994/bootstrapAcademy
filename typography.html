@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Typography & utilities</title>
+    <title>Bootstrap Typography and Utilities</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -11,13 +11,13 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/override-style.css" />
   </head>
   <body>
     <!-- Page wrpper -->
     <div class="container-fluid">
-      <h4 class="text-center display-4">Colors</h4>
-      <div class="container">
+      <h6><a href="/index.html" class="text-info">Back to  Home</a> </h6>
+      <h4 class="text-center display-4 ">Colors</h4>
+      <div class="container mb-5">
         <div class="row">
           <div class="col-sm">
             <h4>Text-colors</h4>
@@ -58,10 +58,21 @@
             <p class="border border-white">.border-white</p>
           </div>
         </div>
+
+        <hr>
+        <div class="row">
+
+          <p class="lead mx-auto text-dark bg-warning border border-danger">
+            Test text
+          </p>
+
+        </div>
+        <hr>
+
       </div>
       <!-- HEADINGS -->
       <h4 class="text-center display-4">Headings</h4>
-      <div class="container">
+      <div class="container mb-5">
         <div class="row">
           <div class="col-sm">
             <h1>h1. Title without class</h1>
@@ -84,7 +95,7 @@
 
       <!-- DISPLAYS -->
       <h4 class="text-center display-4">Display</h4>
-      <div class="container text-center border">
+      <div class="container mb-5 text-center border">
 
         <h1 class="display-1">Display 1</h1>
         <h1 class="display-2">Display 2</h1>
@@ -94,14 +105,14 @@
 
       <!-- TEXT STYLING -->
       <h4 class="text-center display-4">Text style</h4>
-      <div class="container text-center">
-        <p class="lead">This is some .lead text.</p>
+      <div class="container mb-5 text-center">
+        <p class="lead ">This is some .lead text.</p>
         <p>This is default p tag text</p>
       </div>
 
-      <!-- TET ALIGNMENT -->
+      <!-- TEXT ALIGNMENT -->
       <h4 class="text-center display-4">Text alignment</h4>
-      <div class="container">
+      <div class="container mb-5 bg-warning">
         <p class="text-right">Text with right alignment</p>
         <p class="text-left">Text with left alignment</p>
         <p class="text-center">Text with center alignment</p>
@@ -110,7 +121,7 @@
       <!-- LISTS -->
       <h4 class="text-center display-4">Lists</h4>
 
-      <div class="container">
+      <div class="container mb-5">
         <div class="row">
           <div class="col-sm">
             <h4>Unstyled list .list-unstyled</h4>
@@ -130,10 +141,17 @@
           </div>
           <div class="col-sm">
             <h4>Inline list .list-inline .list-inline-item</h4>
+
             <ul class="list-inline">
               <li class="list-inline-item">Item 1</li>
               <li class="list-inline-item">Item 2</li>
               <li class="list-inline-item">Item 3</li>
+            </ul>
+
+            <ul class="list-inline">
+              <li class="list-inline-item">1</li>
+              <li class="list-inline-item">2</li>
+              <li class="list-inline-item">3</li>
             </ul>
           </div>
         </div>
@@ -141,7 +159,50 @@
 
 
       <!-- BORDER PROPS -->
-      <h4 class="text-center display-4">Borders</h4>
+      <h4 class="text-center display-4">Spacing</h4>
+      <div class="container">
+        <p>propertySide-size</p>
+        <div class="row">
+          <div class="col-sm">
+            <h4>Property</h4>
+            <p><span class="text-danger">m</span> - margin</p>
+            <p><span class="text-danger">p</span> - padding</p>
+
+          </div>
+          <div class="col-sm">
+            <h4>Side</h4>
+            <p><span class="text-danger">t</span> - top</p>
+            <p><span class="text-danger">b</span> - bottom</p>
+            <p><span class="text-danger">l</span> - left</p>
+            <p><span class="text-danger">r</span> - right</p>
+            <p><span class="text-danger">y</span> - top and bottom</p>
+            <p><span class="text-danger">x</span> - left and right</p>
+            <p><span class="text-danger">blank</span> - all 4 sides</p>
+
+          </div>
+          <div class="col-sm">
+            <h4>Size - default</h4>
+            <p><span class="text-danger">0</span> - 0</p>
+            <p><span class="text-danger">1</span> - $spacer *0.25</p>
+            <p><span class="text-danger">2</span> - $spacer *0.5</p>
+            <p><span class="text-danger">3</span> - $spacer</p>
+            <p><span class="text-danger">4</span> - $spacer *1.5</p>
+            <p><span class="text-danger">5</span> - $spacer *3</p>
+            <p><span class="text-danger">auto</span> - auto</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Example -->
+      <div class="container border border-danger p-5 m-5" style="width:800px; height: 500px;">
+
+        <div class="div bg-warning mx-auto" style="width: 150px; height: 150px;">Text 1</div>
+
+        <div class="div bg-danger py-5" style="width: 150px; height: 150px;">Text 2</div>
+
+      </div>
+    
       
     </div>
 
