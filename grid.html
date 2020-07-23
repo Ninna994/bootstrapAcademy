@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Grid</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/override-style.css">
+  </head>
+  <body>
+    <!-- Page wrpper -->
+    <div class="container-fluid">
+      <h6><a href="/index.html" class="text-info">Back to  Home</a> </h6>
+
+      <!--CONTAINER -->
+      <h4 class="text-center display-4">Container</h4>
+
+      <div class="container border border-danger text-center" style="height: 50px;">
+        Simple container
+      </div>
+      
+
+      <!--CONTAINER-FLUID -->
+      <h4 class="text-center display-4">Container fluid</h4>
+
+      <div class="container-fluid border border-danger text-center" style="height: 50px;">
+        Fluid container - always 100%
+      </div>
+
+      <!--CONTAINER-{breakpoint} -->
+      <h4 class="text-center display-4">Container-{breakpoints}</h4>
+      
+      <div class="container-md border border-danger mb-5 text-center" style="height: 50px;">
+md breakpoint
+      </div>
+      <div class="container-lg border border-danger text-center" style="height: 50px;">
+lg breakpoint
+      </div>
+
+
+      <!-- ROWS and COLUMNS -->
+      <h4 class="text-center display-4">Rows and columns</h4>
+      <div class="container">
+        <!-- wrapper for columns -->
+        <div class="row bg-warning">
+          <!-- COL-KOLIKO KOLONA DA ZAUZME DATA KOLONA -->
+          <!-- cells -->
+          <!-- <div class="col-8 border border-danger">col</div> -->
+           <div class="col border border-danger">col</div> 
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div> 
+          <!-- <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div> -->
+        </div>
+      </div>
+
+
+      <!-- GRID SYSTEM -->
+      <h4 class="text-center display-4">Grid system</h4>
+      
+      <div class="container border border-danger">
+        <div class="row">
+          <div class="col border border-info">
+            col-1
+          </div>
+          <div class="col border border-primary">col-2</div>
+          <div class="col border border-dark">col-3</div>
+        </div>
+      </div>
+
+      <!-- NO GUTTERS  -->
+      <h4 class="text-center display-4">No gutters grid</h4>
+
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+        </div>
+      </div>
+
+      <!-- ALL COLUMNS EQUAL WIDTH -->
+      <h4 class="text-center display-4">Equal width columns</h4>
+
+      <div class="container">
+        <div class="row border border-primary mb-5">
+          <div class="col">item 1</div>
+          <div class="col">item 2</div>
+          <div class="col">item 3</div>
+          <div class="col">item 4</div>
+          <div class="col">item 5</div>
+          <div class="col">item 6</div>
+          <div class="col">item 7</div>
+        </div>
+        <div class="row border border-danger">
+          <div class="col">item 1</div>
+          <div class="col">item 2</div>
+          <div class="col">item 3</div>
+        </div>
+      </div>
+
+      <!-- ALL COLUMNS EQUAL WIDTH + MULTI LINE -->
+      <h4 class="text-center display-4">Multi-line hack</h4>
+
+      <div class="container">
+        <div class="row">
+          <div class="col border border-danger">col-1</div>
+          <div class="col border border-danger">col-2</div>
+         <!-- hack width:100%;-->
+          <div class="w-100"></div>
+
+          <div class="col border border-dark">col-3</div>
+        </div>
+      </div>
+
+      <!-- SET WIDTH OF ONE COLUMN -->
+      <h4 class="text-center display-4">One column with width set</h4>
+
+      <div class="container">
+        <div class="row border border-danger">
+          <div class="col-2 border border-info">col</div>
+          <div class="col-3 border border-info">col</div>
+          <div class="col-2 border border-info">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+
+      <!-- SET VARIABLE WIDTH WITH {breakpoints} -->
+      <h4 class="text-center display-4">Variable width with {breakpoints}</h4>
+
+      <div class="container">
+        <div class="row border border-danger">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-1 border border-info">col</div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-1 border border-info">col</div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-1 border border-info">col</div>
+          <!-- <div class="col-3 border border-info">col</div>
+          <div class="col-2 border border-info">col</div> -->
+        </div>
+      </div>
+
+      <!-- DEFINE NUMBER OF COLUMNS IN ROW IN ADVANCE -->
+      <h4 class="text-center display-4">Define number of columns</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">col </div>
+          <div class="col-lg">col </div>
+          <div class="col-lg">col </div>
+        </div>
+      </div>
+      <!-- NEST ROWS AND COLUMNS -->
+      <h4 class="text-center display-4">Nest rows and columns</h4>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col border border-danger">
+
+            <div class="row">
+
+              <div class="col">
+                <div class="row">
+                  <div class="col">col-1</div>
+                  <div class="col">col-1</div>
+                </div>
+              </div>
+
+              <div class="col">col</div>
+              <div class="col">col</div>
+
+            </div>
+          </div>
+          <div class="col border border-info">col</div>
+        </div>
+      </div>
+
+      <!-- OFFSET COLUMNS -->
+      <h4 class="text-center display-4">Offset columns</h4>
+      <!-- koliko kolona da yauyima margina sa leve strane -->
+      <div class="container">
+        <div class="row bg-warning">
+          <div class="col offset-3 border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+          <div class="col border border-danger">col</div>
+        </div>
+      </div>
+
+      <!-- ORDER COLUMNS -->
+      <h4 class="text-center display-4">Order columns</h4>
+      <div class="container">
+        <div class="row bg-warning">
+          <div class="col border order-lg-last border-danger">col 1 order-last</div>
+          <div class="col border border-danger">col 2 order-0</div>
+          <div class="col border order-lg-first border-danger">col 3 order-first</div>
+          <div class="col border order-lg-2 border-danger">col 4 order-2</div>
+          <div class="col order-lg-1 border border-danger">col 5 order-1</div>
+          <div class="col border border-danger">col 6 order-0</div>
+        </div>
+      </div>
+    
+      <!-- GRID VERTICAL ALIGNMENT -->
+      <h4 class="text-center display-4">Grid vertical alignment</h4>
+  
+      <div class="container">
+        <div class="row bg-info align-items-start" style="height: 200px;">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+        <div class="row bg-primary align-items-end" style="height: 200px;">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+        <div class="row bg-danger align-items-center" style="height: 200px;">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+
+        <div class="row bg-dark " style="height: 200px;">
+          <div class="col-3 bg-light border border-danger align-self-start" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger align-self-center" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger align-self-end" style="height:50px;">col</div>
+        </div>
+      </div>
+
+      <!-- GRID HORIZONTAL ALIGNMENT -->
+      <h4 class="text-center display-4">Grid horizontal alignment</h4>
+
+
+      <div class="container">
+        <div class="row bg-info justify-content-start" >
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+        <div class="row bg-primary justify-content-end">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+        <div class="row bg-danger justify-content-center">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+        <div class="row bg-dark justify-content-between">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+        <div class="row bg-warning justify-content-around">
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+          <div class="col-3 bg-light border border-danger" style="height:50px;">col</div>
+        </div>
+
+        
+      </div>
+    </div>
+  
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
